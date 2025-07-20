@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Scramble Effects</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+
+    
+</head>
+<body>
+    <div class="bg-animation"></div>
+    
+    <div class="container">
+        <h1 class="main-title">Text Scramble Effects</h1>
+        <p class="subtitle">Watch letters dance and shuffle into perfect formations</p>
+        
+        <div class="effects-grid">
+            <div class="effect-card" onclick="scrambleText('matrix')">
+                <h3 class="effect-title">Matrix Scramble</h3>
+                <div class="scramble-text matrix-scramble" id="matrix-text">CLICK TO SCRAMBLE</div>
+            </div>
+            
+            <div class="effect-card" onclick="scrambleText('cyber')">
+                <h3 class="effect-title">Cyber Scramble</h3>
+                <div class="scramble-text cyber-scramble" id="cyber-text">DIGITAL WORLD</div>
+            </div>
+            
+            <div class="effect-card" onclick="scrambleText('neon')">
+                <h3 class="effect-title">Neon Scramble</h3>
+                <div class="scramble-text neon-scramble" id="neon-text">NEON NIGHTS</div>
+            </div>
+            
+            <div class="effect-card" onclick="scrambleText('glitch')">
+                <h3 class="effect-title">Glitch Scramble</h3>
+                <div class="scramble-text glitch-scramble" id="glitch-text" data-text="ERROR 404">ERROR 404</div>
+            </div>
+            
+            <div class="effect-card" onclick="scrambleText('terminal')">
+                <h3 class="effect-title">Terminal Scramble</h3>
+                <div class="scramble-text terminal-scramble" id="terminal-text">system.exe</div>
+            </div>
+            
+            <div class="effect-card" onclick="scrambleText('holographic')">
+                <h3 class="effect-title">Holographic Scramble</h3>
+                <div class="scramble-text holographic-scramble" id="holographic-text">HOLOGRAM</div>
+            </div>
+        </div>
+        
+        <div class="control-panel">
+            <button class="control-btn" onclick="scrambleAll()">Scramble All</button>
+            <button class="control-btn" onclick="setSpeed('fast')">Fast Mode</button>
+            <button class="control-btn" onclick="setSpeed('slow')">Slow Mode</button>
+            <button class="control-btn" onclick="setSpeed('normal')">Normal Speed</button>
+            <button class="control-btn" onclick="randomizeTexts()">Random Texts</button>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
