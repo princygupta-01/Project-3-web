@@ -1,4 +1,4 @@
-Text Scramble FX
+Text Scramble FX:
 A futuristic terminal-style text scrambler
 
 Features
